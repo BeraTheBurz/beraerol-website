@@ -1,0 +1,29 @@
+/* stil.css */
+
+
+}
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+p {
+
+    color: green;
+    font-size: 26px;
+                                                
+}
+
+img {
+    border: 10px solid white;
+    .centered-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    background-color: 
+    padding: 5px 10px;
+}

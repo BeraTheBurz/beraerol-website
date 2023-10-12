@@ -21,9 +21,9 @@ body {
     background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesini sağlar */
 }
   .navbar{
-       position: absolute;
+       position: relative;
     top: -250px;
-    left: 850px;
+    left: 900px;
        
        }
 

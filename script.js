@@ -108,9 +108,7 @@ function drawImage(){
     animate();
     
     // responsive resize screen
-    window.addEventListener('resize', function () {
-    canvas.style.left = "newLeftValue"; // Yeni sol değeri
-    canvas.style.top = "newTopValue"; // Yeni üst değeri
+    window.addEventListener('resize', function () 
     canvas.width = newCanvasWidth; // Yeni genişlik değeri
     canvas.height = newCanvasHeight; // Yeni yükseklik değeri
     adjustParticlePositions();

@@ -44,7 +44,7 @@ a {
                                                 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
    body {
     margin: 0;
     padding: 0;

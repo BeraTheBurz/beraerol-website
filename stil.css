@@ -44,36 +44,5 @@ a {
     background-color: red;
                                                 
 }
-@media (max-width: 768px) and (orientation: portrait) {
-    body {
-
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        background-color: black;
-        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a2f7c9d8-a913-4273-847f-705be41395df/d9ebz2w-66957331-3bd7-4c21-9da4-f42cb7b178c5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyZjdjOWQ4LWE5MTMtNDI7In1dXSwiYXVkIjpbInvy49zv3dXll3xIn1f2.fWUOyH4RerQGt3MKzyU5jJeG_EdM4dn-09Ig4xYBG1Q");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* Arka planın kaydırılmasını önlemek için */
-        background-position: center; /* Arka planın merkezlenmesi */
-    }
-
-    .navbar {
-        position: relative;
-        top: 0;
-        left: 10%; /* Sol kenara yakın olacak */
-    }
-
-    b, a {
-        color: white;
-        font-size: 20px; /* Font boyutunu azalttık */
-        background-color: red;
-        display: block; /* Öğeleri blok seviyeye getirdik */
-        margin: 10px 0; /* Yatay boşluk ekledik */
-        text-align: center; /* Metni ortaladık */
-        padding: 10px;
-    }
-}
-
 
 

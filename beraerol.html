@@ -1,28 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <link rel="stylesheet" type="text/css" href="stil.css">
-  <style>
-    /* Sayfa boyutunu sabit bir değere ayarlayın */
-    body {
-      width: 800px; /* Genişliği istediğiniz değere ayarlayın */
-      height: 600px; /* Yüksekliği istediğiniz değere ayarlayın */
-      margin: 0 auto; /* Sayfayı ortalamak için kullanılır */
-    }
-    .ascii {
-      position: relative;
-      right: 150px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosyal Medya ve Resimler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0a5c0a;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('https://i.pinimg.com/originals/c4/37/12/c43712af49b76ffbf268dd254800624d.gif');
+            box-shadow: 0 0 50px rgba(0,100,0);
+            }
+            
+            .container a {
+            font-weight: bold; 
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0a5c0a; 
+            color: black;
+            margin: 0;
+
+        }
+        
+        .container img {
+              width: 50%;
+              display: block;
+              margin: 20px auto; /* Center the image vertically */
+      }
+
+        
+        
+        .social-media {
+            margin-top: 20px;
+            text-align: center;
+    
+        }
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+        }
+        .social-media a:last-child {
+            margin-right: 0;
+        }
+    </style>
 </head>
 <body>
-  <img class="ascii" src="https://i.ibb.co/931PMVC/beraascii.png" alt="asciiart">
-  <div class="navbar">
-    <a>Sosyal Medya Hesaplarım</a>
-    <p><a href="https://www.linkedin.com/in/bera-erol-233109294/?originalSubdomain=tr" target="_blank">Linkedin</a></p>
-    <p><a href="https://medium.com/@beraeroll" target="_blank">Blog sayfam</a></p>
-    <p><a href="https://github.com/BeraTheBurz" target="_blank">GitHub profilim</a></p>
-  </div>
+    <header>
+        <h1></h1>
+    </header>
+    <div class="container">
+        <img src="https://i.ibb.co/931PMVC/beraascii.png" alt="beratheburz" width="100%">
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/bera-erol-233109294/?originalSubdomain=tr" target="_blank">Linkedin</a>
+            <a href="https://medium.com/@beraeroll" target="_blank">Blog sayfam</a>
+            <a href="https://github.com/BeraTheBurz" target="_blank">Github</a>
+        </div>
+    </div>
 </body>
 </html>
 

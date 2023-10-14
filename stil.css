@@ -17,9 +17,17 @@ body {
     left: 700px;
        
        }
-       
-                           
-     }
+  .hesaplarım{
+        position: relative;
+        top: 250px;
+        left: 700px;
+          }
+
+b {
+    color: white;
+    font-size: 28px;
+    background-color: red;
+}
        
 a {
     color: white;

@@ -4,46 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sosyal Medya ve Resimler</title>
+    <link rel="stylesheet" type="text/css" href="particles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.css">
+</head>
+<body>
+    <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+        <img src="https://i.ibb.co/931PMVC/beraascii.png" alt="beratheburz" width="100%">
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/bera-erol-233109294/?originalSubdomain=tr" target="_blank">Linkedin</a>
+            <a href="https://medium.com/@beraeroll" target="_blank">Blog sayfam</a>
+            <a href="https://github.com/BeraTheBurz" target="_blank">Github</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 500
+                    }
+                },
+                "color": {
+                    "value": "000"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#"
+                    }
+                },
+                "opacity": {
+                    "value": 0.12,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 4,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#008000",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            }
+        });
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-size: cover;
-            background-repeat: no-repeat;
             background-color: black;
             margin: 0;
             padding: 0;
         }
-        header {
-            
-        }
         .container {
+            background-image: url('https://i.pinimg.com/originals/c4/37/12/c43712af49b76ffbf268dd254800624d.gif');
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            background-image: url('https://i.pinimg.com/originals/c4/37/12/c43712af49b76ffbf268dd254800624d.gif');
-            box-shadow: 0 0 50px rgba(0,100,0);
+            box-shadow: 0 0 50px rgba(0, 100, 0);
         }
         .container a {
             font-weight: bold;
-            display: block; 
+            display: block;
             padding: 10px;
             background-color: #0a5c0a;
             color: black;
-            margin: 3;
-            box-shadow: 0 0 30px rgba(0,100,0);
+            margin: 3px;
+            box-shadow: 0 0 30px rgba(0, 100, 0);
         }
         .container img {
             width: 60%;
             display: block;
-            margin: 20px auto; /* Resmi ortalamak için */
+            margin: 20px auto;
         }
         .social-media a {
             margin-top: 30px;
-            text-align: center
+            text-align: center;
         }
         .social-media a {
             display: block;
-            margin-right: 10px;
+            margin-right: 0px;
             font-size: 24px;
             color: white;
             text-decoration: none;
@@ -53,19 +151,14 @@
         .social-media a:last-child {
             margin-right: 0;
         }
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
     </style>
-</head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <div class="container">
-        <img src="https://i.ibb.co/931PMVC/beraascii.png" alt="beratheburz" width="100%">
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/bera-erol-233109294/?originalSubdomain=tr" target="_blank">Linkedin</a>
-            <a href="https://medium.com/@beraeroll" target="_blank">Blog sayfam</a>
-            <a href="https://github.com/BeraTheBurz" target="_blank">Github</a>
-        </div>
-    </div>
 </body>
-</html> 
+</html>

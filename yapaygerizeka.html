@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Geri Zeka</title>
+    <style>
+        body {
+    background-image: url('https://media.tenor.com/EeCOERAaCyYAAAAC/patrick-star-stupid-computer.gif');
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chatArea {
+    width: 400px;
+    height: 300px;
+    overflow: auto;
+    border: 3px solid white;
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+#userInput {
+    border: 2px solid white;
+    padding: 5px;
+    color: black;
+}
+
+button {
+    border: 3px solid white;
+    padding: 5px;
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <div id="chatArea"></div>
+    <input type="text" id="userInput" placeholder="Mesajınızı buraya yazın..." onkeydown="processKey(event)">
+    <button onclick="processUserInput()">Gönder</button>
+    
+    <script>
+        let userName = "";
+        appendMessage("Akıl Fakiri: Merhaba sohbet edebiliriz!");
+
+        function appendMessage(message) {
+            const chatArea = document.getElementById('chatArea');
+            chatArea.innerHTML += message + "<br>";
+        }
+
+        function processKey(event) {
+            if (event.key === 'Enter') {
+                processUserInput();
+            }
+        }
+
+        function processUserInput() {
+            const userInput = document.getElementById('userInput');
+            const userMessage = userInput.value;
+            userInput.value = "";
+
+            if (userMessage.toLowerCase() === 'çık') {
+                appendMessage("Akıl Fakiri: Görüşmek üzere!");
+                return;
+            }
+
+            if (userMessage.toLowerCase().includes('benim adım')) {
+                userName = userMessage.split(' ').slice(-1)[0];
+                appendMessage("Akıl Fakiri: Merhaba, " + userName + "! Nasıl yardımcı olabilirim?");
+            } else if (userMessage.toLowerCase().includes('adım')) {
+                userName = userMessage.split(' ').slice(-1)[0];
+                appendMessage("Akıl Fakiri: Memnun oldum, " + userName + "! Sana nasıl yardımcı olabilirim?");
+            } else if (userMessage.toLowerCase().includes('adın ne') || userMessage.toLowerCase().includes('ismin ne')) {
+                const response = userName ? "Benim adım Akıl Fakiri. Senin adın nedir, " + userName + "?" : "Benim adım Akıl Fakiri. Senin adın nedir?";
+                appendMessage("Akıl Fakiri: " + response);
+            } else {
+                appendMessage("Sen: " + userMessage);
+                const aiResponse = generateAiResponse(userMessage);
+                appendMessage("Akıl Fakiri: " + aiResponse);
+            }
+        }
+
+        function generateAiResponse(userMessage) {
+            if (userMessage.toLowerCase().includes('naber') || userMessage.toLowerCase().includes('merhaba') || userMessage.toLowerCase().includes('selam') || userMessage.toLowerCase().includes('sa') || userMessage.toLowerCase().includes('slm')) {
+                return "Merhaba! Nasıl yardımcı olabilirim?";
+            } else if (userMessage.toLowerCase().includes('nasılsın')) {
+                return "Teşekkür ederim, iyiyim. Sen nasılsın?";
+            } else {
+                const standardResponses = ["Anlamadım.", "Daha fazla bilgi verir misin?", "İlginç!", "Devam et."];
+                return standardResponses[Math.floor(Math.random() * standardResponses.length)];
+            }
+        }
+        
+    </script>
+</body>
+</html>
